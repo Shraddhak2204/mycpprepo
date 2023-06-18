@@ -1,0 +1,11 @@
+#include <iostream>
+#include<string>
+using namespace std;
+int main() {
+  char buffer[20];
+  string str="Test String...";
+  int length=str.copy(buffer,6,5);
+  buffer[length]='\0';
+  cout<<"Buffer contains : " << buffer <<endl;
+  return 0;
+}
